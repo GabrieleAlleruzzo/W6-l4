@@ -1,0 +1,32 @@
+@import 'scss/functions';
+@import 'scss/variables';
+
+$h7-font-size: $font-size-base * 0.50;
+
+$h8-font-size: $font-size-base * 0.25;
+
+$h9-font-size: $font-size-base * 0.075;
+
+$h10-font-size: $font-size-base * 0.050;
+
+
+
+$new-font-sizes: (
+
+'h7': $h7-font-size,
+
+'h8': $h8-font-size,
+
+'h9': $h9-font-size,
+
+'h10': $h10-font-size,
+
+);
+
+
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes );
+
+
+
+@import 'scss/bootstrap.scss';
